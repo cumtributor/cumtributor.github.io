@@ -1,8 +1,7 @@
 body {
-  margin: 0; padding: 0;
-  padding-top: 50%;
-  background-color: black;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
   background: url(./bg.png) fixed;
 }
 .hor {
@@ -11,11 +10,19 @@ body {
 }
 .ver {
   width: 100vh; height: 100vw;
+  transform-origin: top left;
   rotate: 90deg;
+  translate: 100vw 0;
 }
 img, video {
   display: none;
   width: 100%; height: 100%;
+  grid-row: 2;
+  min-height: 0;
   object-fit: contain;
+  object-position: bottom;
 }
-.flip { rotate: 180deg }
+.flip {
+  rotate: 180deg;
+  object-position: top;
+}
