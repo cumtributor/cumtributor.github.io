@@ -1,0 +1,21 @@
+body {
+  margin: 0; padding: 0;
+  padding-top: 50%;
+  background-color: black;
+  box-sizing: border-box;
+  background: url(./bg.png) fixed;
+}
+.hor {
+  width: 100vw; height: 100vh;
+  rotate: 180deg;
+}
+.ver {
+  width: 100vh; height: 100vw;
+  rotate: 90deg;
+}
+img, video {
+  display: none;
+  width: 100%; height: 100%;
+  object-fit: contain;
+}
+.flip { rotate: 180deg }
